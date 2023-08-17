@@ -9,7 +9,7 @@ to see the program in action visit the following link @ youtube: https://www.you
 
 PassingProcs:
 
-a Microsoft Macro assembly program that I wrote in the winter of 2022 in order to familiarize my self with parameter passing, base + offset referencing and merge sort. It was fun getting to know how my computer works at a very low level!
+a Microsoft Macro assembly program that I wrote in the winter of 2022 in order to familiarize my self with parameter passing, base + offset referencing and the merge sort algorithm. It was fun getting to know how my computer works at a very low level!
 
 
 to see the program in action visit the following link @ youtube: https://www.youtube.com/watch?v=mh1c2OtJ5Tg
