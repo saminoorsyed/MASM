@@ -1,5 +1,6 @@
 # MASM
-a repo to showcase a few Microsoft Macro Assembly language projects that I built
+a repo to showcase a few Microsoft Macro Assembly language projects that I built using the IRVING library
+The code the I wrote is in the .asm files in both folders.
 
 MacrosAndProcs:
 
