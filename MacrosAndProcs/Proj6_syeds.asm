@@ -2,17 +2,14 @@ TITLE Proj5_syeds     (Proj5_syeds.asm)
 
 ; Author: Sami Noor Syed
 ; Last Modified: 12/01/2022
-; OSU email address: syeds@oregonstate.edu
-; Course number/section:   CS271 Section 406
-; Project Number:  Proj-5          Due Date: 12/04/2022
 ; Description: Program does the following:
 ;	1. Implement two Macros to read user input and to display an output
 ;		a. mGetString: displays a prompt, gets the user's input to a mem location
-;		b. mDisplay String: Print the strin which is stored in a specific memory location
-;	2. implement two procedures for signed integers which use string primitive instrutions
-;		a. ReadVal, which invokes mGetstring to get the user input,
+;		b. mDisplay String: Print the string which is stored in a specific memory location
+;	2. Implement two procedures for signed integers which use string primitive instrutions
+;		a. ReadVal invokes mGetstring to get the user input,
 ;			Converts (using string primitives) a string of acsii digits to their numeric vals
-;			validates the user's input (no letters, non number characters)
+;			validates the user's input (no letters, non-number characters)
 ;			Stores that value in a memory variable (output param, by reference)
 ;		b. Writeval, converts a numeric SDWORD value (input parameter, by val) to a string of acsii digits
 ;			invokes the mDisplayString macro to print the ascii SDWORD value to the output
@@ -37,7 +34,7 @@ INCLUDE Irvine32.inc
 ;
 ; Returns: prints the string located at the specified memory location
 ;
-; Registers changed: EDX (but its restored)
+; Registers changed: EDX (but is restored)
 ;**********************************************************************************
 
 mDisplayString	MACRO	stringOffset
