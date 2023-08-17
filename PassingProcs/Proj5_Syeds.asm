@@ -2,9 +2,6 @@ TITLE Proj5_syeds     (Proj5_syeds.asm)
 
 ; Author: Sami Noor Syed
 ; Last Modified: 11/18/2022
-; OSU email address: syeds@oregonstate.edu
-; Course number/section:   CS271 Section 406
-; Project Number:  Proj-5          Due Date: 11/20/2022
 ; Description: Program does the following:
 ;	1. Generates "ARRAYSIZE" random integers between global constants LO and Hi
 ;	2. stores them in consecutive elements of the array 'randArray'
@@ -14,15 +11,12 @@ TITLE Proj5_syeds     (Proj5_syeds.asm)
 ;	6. Generates an array 'counts' which holds the number of times each value int the range [LO, Hi] is seen in randArray
 ;	7. Display the 'counts' array
 ;	8. Say GOODBYE
-;
 ; Goals: 
 ;	Practice with procedures and passing parameters on the stack and base+offset referencing
 ;	implement merge sort using assembly lang O(nlog(n))
 ;	Gosh this one was a toughie
 
 INCLUDE Irvine32.inc
-
-; (insert macro definitions here)
 
 ; (insert constant definitions here)
 
@@ -32,6 +26,7 @@ ARRAYSIZE	= 200
 RANGE		= 1+HI-LO		;I think this is legal... it seems to work well
 
 .data
+
 ; (insert variable definitions here)
 
 ;introduction and program description
@@ -94,7 +89,7 @@ main PROC
 	PUSH	OFFSET sortedArray
 	CALL	sortList	
 
-;	5.	Prin the Sorted array (args passed by refernce)
+;	5.	Print the Sorted array (args passed by refernce)
 	PUSH	OFFSET	sortedArrayText
 	PUSH	OFFSET	spaceBetween
 	PUSH	OFFSET	ARRAYSIZE
